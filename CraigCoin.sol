@@ -1,11 +1,11 @@
-pragma solidity ^0.4.20;
+pragma solidity ^0.4.24;
 
 contract CraigCoin {
     /* This creates an array with all balances */
     mapping (address => uint256) public balanceOf;
 
     /* Initializes contract with initial supply tokens to the creator of the contract */
-    function CraigCoin(
+    constructor (
         uint256 initialSupply
         ) public {
         balanceOf[msg.sender] = initialSupply;              // Give the creator all initial tokens
