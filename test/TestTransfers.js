@@ -1,6 +1,6 @@
 var CraigCoin = artifacts.require("CraigCoin");
 
-contract('CraigCoin', function(accounts) {
+contract('CraigCoin - Money Transfers', function(accounts) {
     it("should send money correctly", function() {
         var coin;
         var aBefore, bBefore, aAfter, bAfter;
